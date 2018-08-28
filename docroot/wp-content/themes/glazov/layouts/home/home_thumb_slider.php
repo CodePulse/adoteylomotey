@@ -42,7 +42,7 @@ $hide_share_icons = (array) cs_get_option('hide_share_icons');
     <?php
     if ( !empty( $gallery_imagess ) ) {
         foreach ($gallery_imagess as $key => $image) {
-          $imagess = wp_get_attachment_image_src( $image, 'fit' );
+          $imagess = wp_get_attachment_image_src( $image, 'contain' );
           $glazov_alt = get_post_meta( $image, '_wp_attachment_image_alt', true );
           $page_url = get_the_permalink();
           $image_media_link = get_post_meta($image, '_image_media_link', true);
