@@ -6909,3 +6909,6 @@ span.wpcf7-not-valid-tip {
 .mean-container .glzv-toggle {
   display: none;
 }
+.lg-toolbar .lg-download.lg-icon {
+  display: none;
+}
